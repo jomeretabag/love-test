@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Test 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <section id="page1" class="page active">
+
+        <div class="card">
+
+            <div class="cat">🐱</div>
+
+            <h1>How much do you care about me?</h1>
+
+            <p class="percentage" id="percentage">0%</p>
+
+            <div class="meter">
+                <div class="meter-fill" id="meterFill"></div>
+                <div class="heart">♡</div>
+            </div>
+
+            <input
+                type="range"
+                id="loveSlider"
+                min="0"
+                max="100"
+                value="0"
+            >
+
+            <p class="small-text">
+                Move the slider all the way to the end 💗
+            </p>
+
+            <button id="testButton" onclick="checkLove()">
+                Start the Love Test
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section id="page2" class="page">
+
+        <div class="card">
+
+            <h1>💗 You Passed!</h1>
+
+            <h2>Your surprises are waiting for you</h2>
+
+            <p>Choose a gift 🎁</p>
+
+            <div class="gifts">
+
+                <div class="gift" onclick="openGift(1)">
+                    <div class="gift-top">🎀</div>
+                    <div class="gift-box">🎁</div>
+                    <p>Gift 1</p>
+                </div>
+
+                <div class="gift" onclick="openGift(2)">
+                    <div class="gift-top">🎀</div>
+                    <div class="gift-box">🎁</div>
+                    <p>Gift 2</p>
+                </div>
+
+                <div class="gift" onclick="openGift(3)">
+                    <div class="gift-top">🎀</div>
+                    <div class="gift-box">🎁</div>
+                    <p>Gift 3</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section id="page3" class="page">
+
+        <div class="card surprise">
+
+            <div class="big-heart">💗</div>
+
+            <h1>A Little Surprise</h1>
+
+            <p>
+                You found one of the little surprises I prepared for you.
+            </p>
+
+            <div class="photo-frame">
+                <img src="photo.jpg" alt="Our photo">
+            </div>
+
+            <button onclick="goToPage(4)">
+                Next 💕
+            </button>
+
+            <button class="back" onclick="goToPage(2)">
+                Back
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section id="page4" class="page">
+
+        <div class="card music-card">
+
+            <h1>🎵 A Song For You</h1>
+
+            <div class="album">
+                <img src="images/paramore_album.svg" alt="Paramore album cover">
+            </div>
+
+            <h2>Our Little Song</h2>
+
+            <p>
+                A song to remember this special moment.
+            </p>
+
+            <!-- Put your own audio file here -->
+            <audio id="music" controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <button onclick="goToPage(5)">
+                Read My Letter 💌
+            </button>
+
+            <button class="back" onclick="goToPage(2)">
+                Back
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section id="page5" class="page">
+
+        <div class="letter-card">
+
+            <h1>💌 A Letter From My Heart</h1>
+
+            <div class="paper">
+
+                <p>
+                    Dear langga
+                </p>
+
+                <p>
+                    I made this little website because I wanted to
+                    create something different and memorable.
+                </p>
+
+                <p>
+                    Thank you for all the happy moments, the laughs,
+                    and the memories we have shared.
+                </p>
+
+                <p>
+                    I hope this small surprise makes you smile today.
+                    No matter how simple it is, I made it with
+                    genuine thought and care.
+                </p>
+
+                <p>
+                    Always take care and keep smiling. 💗
+                </p>
+
+                <p class="signature">
+                    — From someone who cares about you 💕
+                </p>
+
+            </div>
+
+            <button onclick="goToPage(2)">
+                Back to Gifts 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
